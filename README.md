@@ -1,40 +1,56 @@
-# ⚖️ NyayaSetu AI
+# NyayaSetu AI
+
 ### Justice Made Simple for Every Indian
 
-NyayaSetu AI is an AI-powered legal assistance platform designed to make Indian legal information easier to understand and access. It helps citizens explore their legal rights, understand laws, access legal document templates, and get guidance through an AI-powered chatbot.
+**NyayaSetu AI** is an AI-powered legal assistance platform designed to make Indian legal information more accessible and easier to understand. It helps citizens explore their legal rights, understand legal provisions, access document templates, and receive AI-assisted legal guidance through a unified platform.
 
 ---
 
-## 📖 About the Project
+## Table of Contents
 
-Understanding legal rights and procedures can be difficult for ordinary citizens because legal information is often complex and difficult to access.
+- [About the Project](#about-the-project)
+- [Key Features](#key-features)
+- [Technology Stack](#technology-stack)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+- [Environment Configuration](#environment-configuration)
+- [Deployment](#deployment)
+- [Future Scope](#future-scope)
+- [Disclaimer](#disclaimer)
+- [Author](#author)
 
-NyayaSetu AI aims to bridge this gap by providing a simple, accessible platform where users can explore Indian laws, understand their rights, access useful legal resources, and receive AI-assisted legal guidance.
+---
 
-The project focuses on improving legal awareness and making legal information more accessible to everyone.
+## About the Project
 
-## ✨ Features
+Access to legal information remains a challenge for many citizens due to complex legal terminology, limited awareness, and difficulty navigating legal procedures.
 
-- ⚖️ **Know Your Rights:** Explore important legal rights and provisions under Indian law.
-- 🔍 **Legal Search:** Search and explore legal information using relevant sections and keywords.
-- 🤖 **AI Legal Assistant:** Ask legal questions and receive AI-assisted explanations.
-- 📄 **Legal Document Templates:** Access useful templates for legal applications, complaints, and notices.
-- 🚨 **FIR Assistance:** Learn about the FIR process and access related information.
-- 🌐 **Multilingual Support:** Designed to make legal information accessible in multiple languages.
-- 🔐 **User Authentication:** User registration and login functionality.
-- 📚 **Legal Awareness:** Learn about laws, legal procedures, and citizen rights.
+NyayaSetu AI aims to bridge this gap by providing a centralized platform for legal awareness and assistance. Users can explore Indian laws, understand their fundamental legal rights, access useful legal document templates, and interact with an AI-powered assistant to get simplified explanations of legal topics.
 
-## 🛠️ Tech Stack
+The project focuses on using technology to promote legal literacy, improve accessibility, and make essential legal information easier to understand.
 
-| Category | Technologies |
-|---|---|
-| Frontend | React.js, JavaScript, Tailwind CSS |
-| Backend | Node.js, Express.js |
-| Database | MongoDB |
-| Authentication | Based on implemented authentication system |
-| Development Tools | VS Code, MongoDB Compass |
+## Key Features
 
-## 📂 Project Structure
+- **Legal Rights Information:** Explore important legal rights and provisions under Indian law.
+- **Legal Search:** Search for legal information using relevant sections and keywords.
+- **AI-Powered Legal Assistant:** Interact with an AI assistant to receive simplified explanations of legal queries.
+- **Legal Document Templates:** Access templates for commonly used legal documents, applications, and notices.
+- **FIR Assistance:** Understand the FIR filing process and access related legal information.
+- **Multilingual Accessibility:** Support for making legal information accessible to users in multiple languages.
+- **User Authentication:** User registration and login functionality.
+- **Legal Awareness Resources:** Access educational information about laws, rights, and legal procedures.
+
+## Technology Stack
+
+| Layer                   | Technology                         |
+| ----------------------- | ---------------------------------- |
+| Frontend                | React.js, JavaScript, Tailwind CSS |
+| Backend                 | Node.js, Express.js                |
+| Database                | MongoDB                            |
+| Development Environment | Visual Studio Code                 |
+| Database Management     | MongoDB Compass                    |
+
+## Project Structure
 
 ```text
 NyayaSetu-AI/
@@ -57,17 +73,20 @@ NyayaSetu-AI/
 └── README.md
 ```
 
-*The structure above is a simplified overview of the project.*
+*Note: This is a simplified representation of the project directory.*
 
-## 🚀 Getting Started
+## Getting Started
 
-Follow these steps to run NyayaSetu AI locally.
+Follow the instructions below to set up and run the project locally.
 
 ### Prerequisites
 
-- Node.js and npm
-- MongoDB (local installation or MongoDB Atlas)
-- Git
+Ensure that the following software is installed:
+
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/)
+- [Git](https://git-scm.com/)
+- [MongoDB](https://www.mongodb.com/)
 
 ### 1. Clone the Repository
 
@@ -76,14 +95,16 @@ git clone https://github.com/RudraMilke/NyayaSetu-AI.git
 cd NyayaSetu-AI
 ```
 
-### 2. Set Up the Backend
+### 2. Configure the Backend
+
+Navigate to the server directory:
 
 ```bash
 cd server
 npm install
 ```
 
-Create a `.env` file inside the server folder and configure the environment variables required by your backend.
+Create a `.env` file inside the `server` directory and configure the required environment variables.
 
 Example:
 
@@ -93,32 +114,30 @@ MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
 ```
 
-Use the actual variable names required by your backend code.
+Use the exact environment variable names expected by the backend implementation.
 
-Start the backend using the script configured in your `server/package.json`, for example:
+Start the backend:
 
 ```bash
 npm run dev
 ```
 
-### 3. Set Up the Frontend
+### 3. Configure the Frontend
 
-Open another terminal:
+Open a separate terminal and navigate to the client directory:
 
 ```bash
 cd client
 npm install
 ```
 
-Configure the frontend API URL in the environment file if your application uses one.
+Configure the backend API URL in the frontend environment file if required.
 
-For Vite projects, an example is:
+For a Vite-based application, the variable may look like:
 
 ```env
 VITE_API_URL=http://localhost:5000
 ```
-
-Use the variable name expected by your frontend code.
 
 Start the frontend:
 
@@ -126,50 +145,52 @@ Start the frontend:
 npm run dev
 ```
 
-Open the local URL displayed in your terminal.
+Open the local development URL displayed in the terminal.
 
-## 🔐 Environment Variables
+## Environment Configuration
 
-Environment variables contain configuration details such as database connection strings, API URLs, and authentication secrets.
+The application uses environment variables for configuration, including database connection details, API URLs, and authentication secrets.
 
-Never upload actual `.env` files or private credentials to GitHub.
+For security:
 
-## ☁️ Deployment
+- Never commit `.env` files to the repository.
+- Keep database credentials and API keys private.
+- Configure production environment variables directly through the hosting platforms.
 
-The project is intended to be deployed using:
+## Deployment
 
-| Component | Hosting Platform |
-|---|---|
-| Frontend | Vercel |
-| Backend | Render |
-| Database | MongoDB Atlas |
+The application is planned to use the following deployment architecture:
 
-Deployment is a work in progress.
+| Component | Platform      |
+| --------- | ------------- |
+| Frontend  | Vercel        |
+| Backend   | Render        |
+| Database  | MongoDB Atlas |
 
-## 🎯 Future Scope
+Deployment configuration and live application links will be added once the deployment process is complete.
 
-- Improve AI-generated legal explanations.
-- Expand the Indian laws and legal information database.
-- Improve regional language support.
-- Add more legal document templates.
-- Enhance legal aid discovery and accessibility.
-- Improve the platform's overall user experience.
+## Future Scope
 
-## ⚠️ Disclaimer
+- Expand the legal information database with additional Indian laws and provisions.
+- Improve AI-generated legal explanations and contextual responses.
+- Extend regional language support.
+- Introduce additional legal document templates.
+- Improve legal aid discovery and accessibility.
+- Enhance performance, security, and user experience.
 
-NyayaSetu AI is an educational and legal awareness project. The information provided through the platform is intended for general informational purposes and should not be considered a substitute for professional legal advice.
+## Disclaimer
 
-Users should consult a qualified legal professional for advice regarding specific legal matters.
+NyayaSetu AI is an educational and legal awareness platform developed to simplify access to general legal information.
 
-## 👨‍💻 Developer
+The information provided by the platform is intended for educational purposes only and does not constitute professional legal advice. Users should consult qualified legal professionals for advice concerning specific legal matters.
+
+## Author
 
 **Rudra Milke**
 
-- GitHub: [@RudraMilke](https://github.com/RudraMilke)
-- Project Repository: [NyayaSetu AI](https://github.com/RudraMilke/NyayaSetu-AI)
+- GitHub: [RudraMilke](https://github.com/RudraMilke)
+- Project: [NyayaSetu AI](https://github.com/RudraMilke/NyayaSetu-AI)
 
 ---
 
-<p align="center">
-  ⭐ If you find this project useful, consider giving it a star!
-</p>
+\<p align="center">   \<strong>NyayaSetu AI — Making Legal Awareness More Accessible.\</strong> \</p>
