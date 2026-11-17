@@ -193,4 +193,4 @@ The information provided by the platform is intended for educational purposes on
 
 ---
 
-\<p align="center">   \<strong>NyayaSetu AI — Making Legal Awareness More Accessible.\</strong> \</p>
+NyayaSetu AI — Making Legal Awareness More Accessible
